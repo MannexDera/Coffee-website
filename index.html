@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/Images/coffee.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="css/general.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/general-queries.css" type="text/css" media="all" />
+
+    <script
+      defer
+      src="script.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <title>Coffee Website</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="company-logo">
+        <img
+          src="assets/Images/coffee.svg"
+          alt="company logo"
+          class="logo-img"
+        />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="menu.html" class="nav-link">Menu</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="#newsletter" class="nav-link">News</a>
+          </li>
+          <li>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navigation-container">
+        <button class="cart-btn">
+          <a href="cart.html">
+            <img
+              src="assets/Images/shopping-cart-simple.svg"
+              alt="shopping cart icon"
+              class="add-to-cart"
+            />
+          </a>
+        </button>
+
+        <!-- Mobile Nav -->
+        <button class="btn-mobile-nav">
+          <img
+            class="nav-icon"
+            src="assets/Images/list.svg"
+            alt="hamburger icon"
+            aria-label="open-btn"
+          />
+          <img
+            class="nav-icon"
+            src="assets/Images/x.svg"
+            alt="close icon"
+            aria-label="close-btn"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text-container">
+            <h1 class="hero-text">Start your day with the perfect Coffee</h1>
+            <p class="hero-sub-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+              corporis ipsa blanditiis doloremque.
+            </p>
+
+            <!-- HERO BTN -->
+            <div class="hero-btn-container">
+              <button class="cta-btn" onclick="redirectToAboutPage()">
+                Learn More
+              </button>
+              <button class="cta-btn cta-inset" onclick="redirectToMenuPage()">
+                Order Now
+              </button>
+            </div>
+
+            <h2 class="popular-text">Popular Now</h2>
+          </div>
+
+          <!-- HERO IMAGE -->
+          <div class="hero-img-container">
+            <img
+              src="assets/Images/hero.webp"
+              alt="coffee seeds poured inside a cup"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR NOW SECTION -->
+      <section class="popular-now">
+        <div class="container-width grid grid-3-cols">
+          <div class="container">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/cappuccino.avif"
+                alt="A cup of cappuccino"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Cappuccino</h3>
+                <p class="coffee-price">12K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="container container-hidden">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/hazelnut-latte.avif"
+                alt="A cup of hazelnut-latte"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Hazelnut-latte</h3>
+                <p class="coffee-price">15K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="container container-hidden">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/macchiato-latte.avif"
+                alt="A cup of macchiato-latte"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Macchiato-latte</h3>
+                <p class="coffee-price">18K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT US SECTION -->
+      <section class="about-section">
+        <h2 class="section-header">About Us</h2>
+        <div class="container-width grid grid-4-cols">
+          <div class="icon-container">
+            <img
+              class="icon-img"
+              src="assets/Images/seal-check.svg"
+              alt="seal-check icon"
+            />
+            <h3 class="icon-tittle">High quality</h3>
+            <p class="icon-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              molestias nulla pariatur dignissimos ipsa perspiciatis, rem
+              aliquam veniam.
+            </p>
+          </div>
+
+          <div class="icon-container">
+            <img
+              class="icon-img"
+              src="assets/Images/heart.svg"
+              alt="heart icon"
+            />
+            <h3 class="icon-tittle">Pure grades</h3>
+            <p class="icon-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              molestias nulla pariatur dignissimos ipsa perspiciatis, rem
+              aliquam veniam.
+            </p>
+          </div>
+
+          <div class="icon-container">
+            <img
+              class="icon-img"
+              src="assets/Images/flame.svg"
+              alt="flame icon"
+            />
+            <h3 class="icon-tittle">Proper roasting</h3>
+            <p class="icon-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              molestias nulla pariatur dignissimos ipsa perspiciatis, rem
+              aliquam veniam.
+            </p>
+          </div>
+
+          <div class="icon-container">
+            <img
+              class="icon-img"
+              src="assets/Images/hand-coins.svg"
+              alt="hand coins icon"
+            />
+            <h3 class="icon-tittle">Affordable</h3>
+            <p class="icon-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              molestias nulla pariatur dignissimos ipsa perspiciatis, rem
+              aliquam veniam.
+            </p>
+          </div>
+        </div>
+        <!-- ABOUT IMAGE -->
+        <div class="grid grid-2-cols">
+          <figure class="about-img-box">
+            <img
+              class="about-img"
+              src="assets/Images/about.webp"
+              alt="Cup of Cappuccino and coffee seeds on a table"
+            />
+          </figure>
+          <div class="about-text-box">
+            <h2 class="about-tittle">Best coffee shop in town</h2>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+              harum quo dolorum necessitatibus numquam eligendi a et autem dolor
+              officiis, architecto esse natus excepturi ratione molestiae. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolor
+              culpa minima pariatur officiis! Odit facere, voluptas aliquid fuga
+              ex nostrum nihil, rerum sapiente iusto blanditiis molestias dicta
+              eaque.
+            </p>
+            <button class="cta-btn about-cta" onclick="redirectToAboutPage()">
+              Read More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU SECTION -->
+      <section class="menu-section">
+        <h2 class="section-header">Our special menu</h2>
+        <div class="container-width grid menu-grid-3-cols">
+          <div class="container menu-box">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/americano.avif"
+                alt="A cup of Americano"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Americano</h3>
+                <p class="coffee-price">8K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="container menu-box">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/cappuccino-cup.avif"
+                alt="A cup of Cappuccino"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Cappuccino</h3>
+                <p class="coffee-price">10K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="container menu-box">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/expresso.avif"
+                alt="A cup of Expresso"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Expresso</h3>
+                <p class="coffee-price">5K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="container menu-box">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/latte-coffee.avif"
+                alt="A cup of Latte"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Latte</h3>
+                <p class="coffee-price">12K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="container menu-box">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/macchiato.avif"
+                alt="A cup of macchiato"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Macchiato</h3>
+                <p class="coffee-price">9K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="container menu-box">
+            <figure class="coffee-box">
+              <img
+                src="assets/Images/vintage-latte-art.avif"
+                alt="A cup of vintage-latte"
+                class="coffee-img"
+              />
+              <div class="coffee">
+                <h3 class="coffee-name">Vintage-latte</h3>
+                <p class="coffee-price">15K</p>
+              </div>
+              <div class="coffee-type">
+                <p>Hot</p>
+                <span>Cold</span>
+
+                <div class="cart-icon">
+                  <a href="cart.html">
+                    <img
+                      src="assets/Images/shopping-cart-simple.svg"
+                      alt="shopping cart icon"
+                      class="add-to-cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <!-- SEE MORE BUTTON -->
+        <div class="menu-btn container-width">
+          <button class="cta-btn" onclick="redirectToMenuPage()">See More</button>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-header">Testimonials</h2>
+        <div class="container-width testimonial-container">
+          <div class="testimonial">
+            <div class="testimonial-img-box">
+              <img
+                class="testimonial-img"
+                src="assets/Images/richard.webp"
+                alt="Richard"
+              />
+            </div>
+            <h4 class="testimonial-name">Richard</h4>
+            <p class="testimonial-status">Customer</p>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              tenetur, necessitatibus iste, et minus, fugiat facilis commodi
+              pariatur odit totam culpa nesciunt dolorum autem praesentium
+              sapiente eos vel eveniet explicabo.
+            </blockquote>
+            <div class="testimonial-rating">
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-img-box">
+              <img
+                class="testimonial-img"
+                src="assets/Images/veronica.webp"
+                alt="Veronica"
+              />
+            </div>
+            <h4 class="testimonial-name">Veronica</h4>
+            <p class="testimonial-status">Customer</p>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              tenetur, necessitatibus iste, et minus, fugiat facilis commodi
+              pariatur odit totam culpa nesciunt dolorum autem praesentium
+              sapiente eos vel eveniet explicabo.
+            </blockquote>
+            <div class="testimonial-rating">
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-img-box">
+              <img
+                class="testimonial-img"
+                src="assets/Images/sarah.webp"
+                alt="Sarah"
+              />
+            </div>
+            <h4 class="testimonial-name">Sarah</h4>
+            <p class="testimonial-status">Customer</p>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              tenetur, necessitatibus iste, et minus, fugiat facilis commodi
+              pariatur odit totam culpa nesciunt dolorum autem praesentium
+              sapiente eos vel eveniet explicabo.
+            </blockquote>
+            <div class="testimonial-rating">
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-img-box">
+              <img
+                class="testimonial-img"
+                src="assets/Images/john-smith.webp"
+                alt="John smith"
+              />
+            </div>
+            <h4 class="testimonial-name">John Smith</h4>
+            <p class="testimonial-status">Customer</p>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              tenetur, necessitatibus iste, et minus, fugiat facilis commodi
+              pariatur odit totam culpa nesciunt dolorum autem praesentium
+              sapiente eos vel eveniet explicabo.
+            </blockquote>
+            <div class="testimonial-rating">
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+              <div>
+                <img src="assets/Images/star.svg" alt="star" class="star-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER SECTION -->
+      <section class="newsletter-section" id="newsletter">
+        <h2 class="section-header padding-bottom-sm">Our Newsletter</h2>
+        <div class="newsletter-box">
+          <h3 class="newsletter-header">Subscribe to get 50% discount price</h3>
+          <form
+            class="newsletter-form"
+            action=""
+            method="get"
+            accept-charset="utf-8"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="johndoe@gmail.com"
+              required
+            />
+            <button type="submit" class="cta-btn subscribe">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="grid footer--grid">
+        <div>
+          <a href="#" class="company-logo">
+            <img
+              src="assets/Images/coffee.svg"
+              alt="company logo"
+              class="logo-img"
+            />
+          </a>
+        </div>
+
+        <div>
+          <ul class="footer-nav-list">
+            <li>
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#newsletter" class="nav-link">News</a>
+            </li>
+            <li>
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="contact--list">
+            <li>
+              <a href="emailto:chideraemmanuel843@gmail.com" target="_blank">
+                <img
+                  src="assets/Images/envelope-simple.svg"
+                  alt="Mail envelope"
+                  class="social-icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://twitter.com/deraamaobi?t=v2CFMHxBz5r7yKMF4bLeXA&s=09"
+                target="_blank"
+              >
+                <img
+                  src="assets/Images/twitter-logo.svg"
+                  alt="Twitter-logo"
+                  class="social-icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://wa.me/qr/NAFBBFMHQOYZJ1" target="_blank">
+                <img
+                  src="assets/Images/whatsapp-logo.svg"
+                  alt="Whatsapp-logo"
+                  class="social-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="to-top" href="#">
+          <img src="assets/Images/caret-circle-up.svg" alt="caret icon" />
+        </a>
+      </div>
+
+      <div class="attribution">
+        <p class="attribution-text">
+          Copyright &copy; 2023 by Mannex🧑🏻‍💻🫧. All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
