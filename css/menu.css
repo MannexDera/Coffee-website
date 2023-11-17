@@ -1,0 +1,29 @@
+.menu-section {
+  background-color: #e2ede9;
+}
+
+.menu-grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.main-menu {
+  margin: 0;
+}
+
+.menu-category {
+  margin: 2.4rem 0;
+}
+
+.category-box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.footer {
+  margin-top: 9.6rem;
+}

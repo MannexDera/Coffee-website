@@ -1,0 +1,71 @@
+/***************************************************/
+  /* BELOW 1200px ( FOR LANDSCAPE TABLETS ) */
+/***************************************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/***************************************************/
+ /* BELOW 1080px ( FOR SMALLER LANDSCAPE TABLETS ) */
+/***************************************************/
+@media (max-width: 67.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/***************************************************/
+  /* BELOW 920px ( FOR TABLETS ) */
+/***************************************************/
+@media (max-width: 57.5em) {
+  html {
+    font-size: 43.75%;
+  }
+  
+  .menu-grid-4-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/***************************************************/
+  /* BELOW 815px ( FOR MEDIUM SIZED TABLETS ) */
+/***************************************************/
+@media (max-width: 50em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/***************************************************/
+  /* BELOW 700px ( FOR SMALLER TABLETS ) */
+/***************************************************/
+@media (max-width: 43.75em) {
+  html {
+    font-size: 34%;
+  }
+  
+  .menu-grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/***************************************************/
+  /* BELOW 590px ( FOR MOBILE PHONES ) */
+/***************************************************/
+@media (max-width: 37em) {
+  html {
+    font-size: 32%;
+  }
+  
+  .menu-grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem;
+  }
+}

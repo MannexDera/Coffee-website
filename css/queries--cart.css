@@ -1,0 +1,78 @@
+/***************************************************/
+/* BELOW 1200px ( FOR LANDSCAPE TABLETS ) */
+/***************************************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/***************************************************/
+/* BELOW 1080px ( FOR SMALLER LANDSCAPE TABLETS ) */
+/***************************************************/
+@media (max-width: 67.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .cart-section {
+    padding: 4.8rem 6.4rem;
+  }
+  
+  /* FOOTER */
+  .footer {
+    padding: 3.2rem 6.4rem;
+  }
+}
+
+/***************************************************/
+/* BELOW 920px ( FOR TABLETS ) */
+/***************************************************/
+@media (max-width: 57.5em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .cart-section {
+    padding: 4.8rem;
+  }
+  
+  .footer {
+    padding: 3.2rem;
+  }
+}
+
+/***************************************************/
+/* BELOW 815px ( FOR MEDIUM SIZED TABLETS ) */
+/***************************************************/
+@media (max-width: 50em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/***************************************************/
+/* BELOW 700px ( FOR SMALLER TABLETS ) */
+/***************************************************/
+@media (max-width: 43.75em) {
+  html {
+    font-size: 34%;
+  }
+}
+
+/***************************************************/
+/* BELOW 590px ( FOR MOBILE PHONES ) */
+/***************************************************/
+@media (max-width: 37em) {
+  html {
+    font-size: 32%;
+  }
+  
+  .cart-section {
+    padding: 4.8rem 2.4rem;
+  }
+  
+  .cart--grid {
+    grid-template-columns: 1fr;
+  }
+}
